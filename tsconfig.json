@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src/",
+      "rootDir": "src",
+      "downlevelIteration": true,
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "module": "es6",
+      "target": "es6",
+      "esModuleInterop": true,
+      "jsx": "preserve",
+      "experimentalDecorators": true,
+      "moduleResolution": "node",
+      "forceConsistentCasingInFileNames": false,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "strict": true,
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "outDir": "./lib/esm",
+      "declaration": true,
+      "sourceMap": true,
+      "strictNullChecks": false,
+      "noImplicitThis": false,
+      "paths": {
+        "@/*": ["./*"]
+      }
+    },
+    "exclude": [
+      "lib",
+      "src/**/*.js",
+      "node_modules",
+      "example",
+      "jest",
+      "src/setupTests.ts",
+      "src/index.test.ts",
+      "src/array/index.test.ts"
+    ],
+    "include": [
+      "src"
+    ]
+  }
