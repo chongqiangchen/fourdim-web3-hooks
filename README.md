@@ -1,15 +1,36 @@
-Web3 Hooks
+## Web3 Hooks
 
-1. useblock
-2. useBlockInterval
-3. useNFT
-4. useSwap
-5. useToken
-6. useTransacctionDeadline
+### 当前可用内容
+ - utils: 
+    1. callWithEstimateGas
+    2. estimateGas
+    3. multicall
+    4. splitArray
 
-utils
+### 待重构
+ - hooks 部分待重构，调整参数引入方案（转化为context传入）,如provider, signer, chainId等
+ - utils 中自主传入chainId
+ - （*待确定*）拆分core和hooks，采用monorepo方式，考虑其他框架的扩展
 
-1. callWithEstimateGas
-2. multicall
-3. nft
-4. token
+### 计划内容
+
+**Unit Test**
+- [ ] unit test
+
+**hooks**(待重构部分参数引入方式):
+- [ ] useBlock
+- [ ] useBlockInterval
+- [ ] useNFT
+- [ ] useSwap
+- [ ] useToken
+- [ ] useTransacctionDeadline
+
+**utils**
+ - [x] callWithEstimateGas
+ - [x] estimateGas
+ - [x] multicall
+ - [ ] nft
+ - [ ] token
+ - [ ] price
+ - [x] splitArray
+
