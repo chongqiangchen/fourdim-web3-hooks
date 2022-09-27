@@ -1,4 +1,4 @@
-export const splitArray = <T>(arr: T[], flag = 50): T[][] => {
+const splitArray = <T>(arr: T[], flag = 50): T[][] => {
   const len = arr.length;
   const temp = [];
   if (len <= flag) {
@@ -10,3 +10,5 @@ export const splitArray = <T>(arr: T[], flag = 50): T[][] => {
   }
   return temp.filter((item) => item && item.length !== 0);
 };
+
+export default splitArray;

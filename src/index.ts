@@ -6,7 +6,11 @@ export {default as useToken} from "./hooks/useToken";
 export {default as useNFT} from "./hooks/useNFT";
 
 
-export {default as NFT} from './utils/nft';
 export {default as Token} from './utils/token';
 export {default as multicall, multicallv2, multicallv3} from './utils/multicall';
 export {estimateGas, callWithEstimateGas} from './utils/estimateGas';
+export {default as splitArray} from './utils/splitArray';
+
+export {default as NFT} from './helper/nft';
+
+export * as ABI from './config/abi';

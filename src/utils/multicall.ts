@@ -1,7 +1,7 @@
 import { ethers } from 'ethers';
 import { Call, MulticallOptions, MultiCallResponse } from '@/typings/multicall';
 import { getMulticallContract } from '@/utils/contractHelpers';
-import { splitArray } from './splitArray';
+import splitArray from './splitArray';
 
 const multicall = async <T = any>(
   abi: any[],
